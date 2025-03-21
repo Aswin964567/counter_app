@@ -12,17 +12,19 @@ class HomeScreen extends StatelessWidget {
         centerTitle: true,
         automaticallyImplyLeading: false,
       ),
-      body: Column(
-        children: [
-          // Text("Counter"),
-          SizedBox(height: 40),
-          ElevatedButton(
-            onPressed: () {
-              context.pushNamed('counter');
-            },
-            child: Text("Press to New page"),
-          ),
-        ],
+      body: Center(
+        child: Column(
+          children: [
+            // Text("Counter"),
+            SizedBox(height: 40),
+            ElevatedButton(
+              onPressed: () {
+                context.pushNamed('counter');
+              },
+              child: Text("Press to New page"),
+            ),
+          ],
+        ),
       ),
     );
   }
