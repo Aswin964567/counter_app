@@ -1,9 +1,9 @@
 import 'dart:developer';
 
-import 'package:counter_app/features/counter/services/counter_service.dart';
+import 'package:counter_app/features/counter/data/services/counter_service.dart';
 import 'package:flutter/material.dart';
 
-import '../models/counter_model.dart';
+import '../data/models/counter_model.dart';
 
 class CounterProvider with ChangeNotifier {
   List<Counter> _counters = [];
@@ -50,8 +50,6 @@ class CounterProvider with ChangeNotifier {
   }
 
   // increment Counter
-  // Counter updatedCounter = 
-  // Counter updatedCounter = Counter();
   Future<void> incrementCounter({required String counterId}) async {
     try {
       final response = await CounterService().incrementCounter(
