@@ -1,5 +1,6 @@
 import 'package:counter_app/core/router/router.dart';
 import 'package:counter_app/core/theme/theme.dart';
+import 'package:counter_app/features/authentication/providers/auth_provider.dart';
 import 'package:counter_app/features/counter/providers/counter_provider.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
@@ -9,6 +10,7 @@ void main() {
     MultiProvider(
       providers: [
          ChangeNotifierProvider(create: (_) => CounterProvider()),
+         ChangeNotifierProvider(create: (_) => AuthProvider()),
       ],
       child: const MyApp(
       
@@ -23,6 +25,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp.router(
+      debugShowCheckedModeBanner: false,
       title: 'Flutter Demo',
       theme: AppTheme.lightTheme,
       routerConfig: appRouter,
