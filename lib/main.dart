@@ -1,7 +1,7 @@
 import 'package:counter_app/core/router/router.dart';
 import 'package:counter_app/core/theme/theme.dart';
-import 'package:counter_app/features/authentication/providers/auth_provider.dart';
-import 'package:counter_app/features/counter/providers/counter_provider.dart';
+import 'package:counter_app/features/authentication/viewmodel/auth_provider.dart';
+import 'package:counter_app/features/counter/viewmodel/counter_provider.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
