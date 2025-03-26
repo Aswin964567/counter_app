@@ -1,5 +1,5 @@
 import 'package:counter_app/features/counter/data/models/counter_model.dart';
-import 'package:counter_app/features/counter/providers/counter_provider.dart';
+import 'package:counter_app/features/counter/viewmodel/counter_provider.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
